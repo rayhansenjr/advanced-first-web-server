@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint src",
-    "start": "nodemon --exec 'eslint src && babel-node src/index'",
+    "start": "nodemon --exec \"eslint src && babel-node src/index\"",
+    "dev": "nodemon src/index",
     "test": "npm run lint"
   },
   "repository": {
@@ -20,7 +21,9 @@
   },
   "homepage": "https://github.com/AustinCodingAcademy/advanced-first-web-server#readme",
   "dependencies": {
-    "express": "^4.15.0"
+    "body-parser": "^1.16.1",
+    "express": "^4.15.0",
+    "mongoose": "^4.9.2"
   },
   "devDependencies": {
     "babel-cli": "^6.18.0",
